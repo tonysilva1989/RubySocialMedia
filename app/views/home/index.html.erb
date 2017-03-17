@@ -1,2 +1,10 @@
-<h1>REDE SOCIAL!</h1>
+<h1>BEM-VINDO À REDE SOCIAL!</h1>
 
+ <% if user_signed_in? %>
+    
+         Cidade:  <strong><%= current_user.city %></strong><br> 
+         Estado:  <strong><%= current_user.state %></strong><br>
+         País:  <strong><%= current_user.country %></strong>
+        <% else %>
+        Oi sumido, rs
+<% end %>

@@ -2,9 +2,25 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
+
   <div class="field">
-    <p><%= f.label :nome_do_usuario %><br />
-    <%= f.text_field :nome_user %></p>
+    <p><%= f.label :nome_usuario %><br />
+    <%= f.text_field :username %></p>
+  </div>
+
+  <div class="field">
+    <p><%= f.label :cidade %><br />
+    <%= f.text_field :city %></p>
+  </div>
+
+  <div class="field">
+    <p><%= f.label :estado %><br />
+    <%= f.text_field :state %></p>
+  </div>
+
+  <div class="field">
+    <p><%= f.label :país %><br />
+    <%= f.text_field :country %></p>
   </div>
 
   <div class="field">
